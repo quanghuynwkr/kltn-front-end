@@ -1,0 +1,22 @@
+@use '../../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+
+
+
+.ml-1 {
+    @media (min-width:640px) {
+        font-size: 17px;
+        width: 160px;
+        height: 40px; 
+    }
+    @media (min-width:1280px) {
+        font-size: 20px;
+        width: 200px;
+    }
+}
+
+
+

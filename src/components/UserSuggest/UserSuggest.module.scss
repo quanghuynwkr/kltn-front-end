@@ -1,0 +1,55 @@
+.email-participant {
+    border: 1px solid #878585;
+    background-color: #4037bb;
+    border-radius: 20px;
+    color: white;
+}
+.btn-csv {
+    color: var(--primary);
+
+    border-radius: 20px;
+    position: relative;
+
+    background-color: transparent;
+
+    cursor: pointer;
+
+    display: block;
+
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+}
+
+.btn-csv span {
+    position: relative;
+    z-index: 2;
+}
+
+.btn-csv:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--primary);
+    transition: all 0.35s;
+}
+
+.btn-csv:hover {
+    color: #fff;
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+.btn-csv:hover:after {
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+}

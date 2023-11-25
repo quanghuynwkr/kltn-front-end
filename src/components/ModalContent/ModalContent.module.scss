@@ -1,0 +1,15 @@
+.bar {
+    position: absolute;
+    width: 3%;
+    height: 100%;
+    top: 0;
+    left: 0%;
+
+    background-color: var(--primary);
+}
+.Modal-Content {
+    z-index: 100000;
+}
+.field {
+    margin-left: 10px;
+}

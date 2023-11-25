@@ -1,0 +1,32 @@
+.infor {
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    background-color: white;
+    color: #000000;
+}
+.avatar{
+    width: 200px;    
+     height: 200px;
+     object-fit: cover;
+     object-position: center;
+     border-radius: 50%;
+
+}
+
+.title {
+    @media (min-width: 640px) {
+        font-size: large;
+    }
+    @media (min-width: 1536px) {
+        font-size: 30px;
+    }
+}
+
+.field {
+    @media (min-width: 640px) {
+        font-size: large;
+    }
+    @media (min-width: 1280px) {
+        font-size: 23px;
+    }
+}

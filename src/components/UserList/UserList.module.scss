@@ -1,0 +1,12 @@
+.user-form {
+    opacity: 1;
+    transition: opacity 0.5s linear;
+}
+
+.hidden {
+    opacity: 0;
+}
+.search {
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+}

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.Dropdown-control {
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-left: 0.75rem;
+    padding: 0.15rem;
+    height: 45px;
+    @media (min-width: 640px) {
+        margin-right: 0%;
+        font-size: 17px;
+    }
+    @media (min-width: 768px) {
+        margin-right: 0%;
+        font-size: 19px;
+    }
+    @media (min-width: 1280px) {
+        margin-right: 60%;
+        font-size: 23px;
+    }
+    
+}
+.Dropdown-arrow {
+    top: 50%;
+    transform: translateY(-50%);
+    
+}
+.Dropdown-option:hover {
+    background-color: #ec210b;
+}
+.Dropdown-menu {
+    top: 120%;
+    border-radius: 20px;
+}
+.css-13cymwt-control {
+    border-radius: 20px !important;
+}
+.select__control,
+.css-13cymwt-control {
+    border: 1px solid black !important;
+    width: 99% !important;
+    margin-left: 0.75rem;
+}
+input[type='number']::-webkit-outer-spin-button,
+input[type='number']::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.select__menu {
+    z-index: 10 !important;
+}
+
+.home>.Dropdown-control {
+    width: 500px;
+    height: 40px;
+}

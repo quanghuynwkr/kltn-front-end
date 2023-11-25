@@ -1,0 +1,33 @@
+.user-card {
+    border: 1px solid #333;
+    border-radius: 30px;
+    background-color: #e4e9ff;
+    cursor: pointer;
+    box-shadow: var(--box-shadow);
+}
+.type {
+    position: relative;
+}
+.dot {
+    position: absolute;
+    top: 36%;
+    transform: translateX(-36%);
+    width: 9px;
+    height: 9px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.disable {
+    background-color: gray;
+    color: rgb(70, 69, 69) !important;
+}
+
+    .avatar{
+        width: 30px;    
+         height: 30px;
+         object-fit: cover;
+         object-position: center;
+         border-radius: 50%;
+    
+    }

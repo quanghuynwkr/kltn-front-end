@@ -1,0 +1,50 @@
+@use '../../../components/GlobalStyles/GlobalStyles.module.scss' as *;
+
+// @import 'tailwindcss/base';
+// @import 'tailwindcss/components';
+// @import 'tailwindcss/utilities';
+.header {
+    background-color: #1c4ca0;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+.header_title {
+    font-size: 18px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: 600;
+    @media (min-width: 640px) {
+        font-size: 13px;
+    }
+
+    @media (min-width: 768px) {
+        font-size: 16px;
+    }
+
+    @media (min-width: 1280px) {
+        font-size: 18px;
+    }
+    
+}
+.avatar{
+    width: 50px;    
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    @media (min-width: 640px) {
+        width: 30px;
+        height: 30px;
+    }
+    
+    @media (min-width: 768px) {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+.image {
+    padding-right: 5px;
+}

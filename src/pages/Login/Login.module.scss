@@ -1,0 +1,104 @@
+.form-control {
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    font-size: var(--font-size);
+}
+.form {
+    box-shadow: var(--box-shadow);
+    border: 1px solid #333;
+    border-radius: var(--border-radius);
+    
+}
+.form-group {
+    margin: 10px 0 10px 0;
+}
+.btn {
+    background-color: var(--primary);
+    color: var(--white);
+    &:hover {
+        background-color: #004df5;
+    }
+}
+$background: #e4fff7;
+
+@function textShadow($precision, $size, $color) {
+    $value: null;
+    $offset: 0;
+    $length: $size * (1 / $precision) - 1;
+
+    @for $i from 0 through $length {
+        $offset: $offset + $precision;
+        $shadow: $offset + px $offset + px $color;
+        $value: append($value, $shadow, comma);
+    }
+
+    @return $value;
+}
+
+.playful span {
+    position: relative;
+    color: #5362f6;
+    text-shadow: textShadow(0.25, 6, #e485f8);
+    animation: scatter 1.75s infinite;
+}
+
+.playful span:nth-child(2n) {
+    color: #ed625c;
+    text-shadow: textShadow(0.25, 6, #f2a063);
+    animation-delay: 0.3s;
+}
+
+.playful span:nth-child(3n) {
+    color: #ffd913;
+    text-shadow: textShadow(0.25, 6, #6ec0a9);
+    animation-delay: 0.15s;
+}
+
+.playful span:nth-child(5n) {
+    color: #555bff;
+    text-shadow: textShadow(0.25, 6, #e485f8);
+    animation-delay: 0.4s;
+}
+
+.playful span:nth-child(7n),
+.playful span:nth-child(11n) {
+    color: #ff9c55;
+    text-shadow: textShadow(0.25, 6, #ff5555);
+    animation-delay: 0.25s;
+}
+
+@keyframes scatter {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: -10px;
+    }
+    100% {
+        top: 0;
+    }
+}
+
+.header-logo {
+    width: 1000px;
+    height: 100px;
+}
+
+.login-logo {
+    border: 30px solid white ;
+}
+
+.login {
+    @media (min-width:640px) {
+        padding-top: 7%;
+    }
+    @media (min-width:768px) {
+        margin-top: 1%;
+    }
+    @media (min-width:1024px) {
+        padding-top: 3%;
+    }
+    @media (min-width:1280px) {
+        padding-top: 3%;
+    }
+}

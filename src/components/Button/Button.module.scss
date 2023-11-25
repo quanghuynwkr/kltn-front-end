@@ -1,0 +1,240 @@
+.Button {
+    padding: 20px 30px;
+    border-radius: 20px;
+    position: relative;
+    font-size: 16px;
+    background-color: transparent;
+    // color: white;
+    cursor: pointer;
+    z-index: 0;
+
+    // &:hover {
+    //     background-color: #004df5;
+    // }
+
+    display: block;
+
+    color: var(--primary);
+    border: 2px solid var(--primary);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all 0.35s;
+}
+// a {
+//     display: block;
+
+//     color: #333;
+//     border: 2px solid #333;
+//     letter-spacing: 2px;
+//     text-align: center;
+//     position: relative;
+//     transition: all 0.35s;
+// }
+
+.Button span {
+    position: relative;
+    z-index: 2;
+}
+
+.Button:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 20px;
+    background: var(--primary);
+    transition: all 0.35s;
+}
+
+.Button:hover {
+    color: #fff;
+    border-radius: 20px;
+
+    font-weight: bold;
+}
+
+.Button:hover:after {
+    width: 100%;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+.outline {
+    border: 1px solid white;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+.stroke {
+    border: 1px solid var(--primary);
+}
+
+.redBtn {
+    background-color: transparent;
+    color: red;
+    border: 2px solid red;
+    padding: 2px 3px;
+    border-radius: 10px;
+
+    // &:hover {
+    //     background-color: rgb(247, 35, 35);
+    // }
+}
+
+.redBtn span {
+    position: relative;
+    z-index: 2;
+}
+
+.redBtn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: red;
+    transition: all 0.35s;
+}
+
+.redBtn:hover {
+    color: #fff;
+    border-radius: 10px;
+}
+
+.redBtn:hover:after {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.outline {
+    border: 1px solid white;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+
+.blackBtn {
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    padding: 2px 3px;
+    border-radius: 10px;
+
+    // &:hover {
+    //     background-color: rgb(31, 23, 23);
+    // }
+}
+
+.blackBtn span {
+    position: relative;
+    z-index: 2;
+}
+
+.blackBtn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: black;
+    transition: all 0.35s;
+}
+
+.blackBtn:hover {
+    color: #fff;
+    border-radius: 10px;
+}
+
+.blackBtn:hover:after {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.greenBtn {
+    background-color: transparent;
+    color: rgb(13, 204, 13);
+    border: 2px solid rgb(13, 204, 13);
+    padding: 0;
+    padding: 2px 3px;
+    border-radius: 10px;
+
+    // &:hover {
+    //     background-color: rgb(45, 177, 45);
+    // }
+}
+
+.greenBtn span {
+    position: relative;
+    z-index: 2;
+}
+
+.greenBtn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(13, 204, 13);
+    transition: all 0.35s;
+}
+
+.greenBtn:hover {
+    color: #fff;
+    border-radius: 10px;
+}
+
+.greenBtn:hover:after {
+    width: 100%;
+    border-radius: 10px;
+}
+
+//
+.disabled {
+    background-color: rgb(84, 85, 84);
+    color: black;
+    border: 2px solid gray;
+    padding: 0;
+    padding: 2px 3px;
+    border-radius: 10px;
+
+    // &:hover {
+    //     background-color: rgb(45, 177, 45);
+    // }
+}
+
+.disabled span {
+    position: relative;
+    z-index: 2;
+}
+
+.disabled:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-radius: 10px;
+    background: rgb(84, 85, 84);
+    transition: all 0.35s;
+}
+
+.disabled:hover {
+    //color: #0b0b0b;
+    border-radius: 10px;
+    color: black;
+}
+
+// .disabled:hover:after {
+//     width: 100%;
+//     border-radius: 10px;
+// }

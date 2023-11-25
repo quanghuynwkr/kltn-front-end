@@ -1,0 +1,25 @@
+.Button {
+    padding: 20px 30px;
+    border-radius: 20px;
+
+    font-size: 16px;
+    background-color: var(--primary);
+    color: white;
+    cursor: pointer;
+    &:hover {
+        background-color: #004df5;
+    }
+}
+.outline {
+    border: 1px solid white;
+    &:hover {
+        background-color: hsla(0, 0%, 100%, 0.1);
+    }
+}
+.stroke {
+    background-color: violet;
+    border-radius: 20px;
+    &:hover {
+        opacity: 0.8;
+    }
+}
